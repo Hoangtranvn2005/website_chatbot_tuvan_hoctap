@@ -1,0 +1,366 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.page {
+    display: flex;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 5px black;
+    padding: 20px;
+    margin: 5px;
+    margin-bottom: 20px;
+    gap: 5px;
+}
+
+.page img {
+    position: relative;
+    width: 25%;
+}
+
+.page-content {
+  display: inline;
+  padding: 20px;
+}
+
+.page-content h3, a {
+  font-size: 18px;
+}
+
+footer {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: small;
+}
+
+.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: orange;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.header-logo {
+    display: flex;
+    background-color: orange;
+    border-top: 2px solid white;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.header-icon {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.search-box {
+    display: none;
+    position: absolute;
+    border: none;
+    padding: 6px 10px;
+    left: -215px;
+}
+
+.username, .pass, .search {
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+}
+
+button.a1 {
+    border: none;
+    font-size: large;
+    background-color: red;
+    box-shadow: 0 2px 5px black;
+    color: white;
+    padding: 10px;
+}
+
+button.a2 {
+    border: none;
+    font-size: large;
+    background-color: gainsboro;
+    box-shadow: 0 2px 5px black;
+    padding: 10px;
+}
+
+button.username {
+    border: none;
+    font-size: medium;
+}
+
+button.a1:hover {
+    background-color: brown;
+}
+
+button.a2:hover {
+    background-color: gray;
+}
+
+ul {
+    display: inline;
+    background-color: orange;
+}
+
+ul li {
+    display: inline;
+    padding: 12px;
+    width: fit-content;
+    border-right: 2px solid white;
+    background-color: orange;
+}
+
+.menu {
+    display: flex;
+    margin-top: 2px;
+    width: fit-content;
+}
+
+.menu li {
+    position: relative;
+    cursor: pointer;
+}
+
+.menu li:hover {
+    background-color: orangered;
+}
+
+/*quản lý học tập*/
+
+.profile {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px black;
+}
+
+.profile img {
+    position: relative;
+    bottom: 175px;
+    left: 300px;
+}
+
+.course {
+    background-color: whitesmoke;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px black;
+}
+
+.course ul {
+    display: inline-block;
+    background-color: whitesmoke;
+}
+
+.course li {
+    display: block;
+    background-color: whitesmoke;
+    border: none;
+}
+
+input.b1 {
+    border: none;
+    font-size: large;
+    box-shadow: 0 2px 5px black;
+    width: 100px;
+    padding: 10px;
+    margin: 20px;
+}
+
+/*Thư viện tài liệu*/
+.library-content {
+    padding: 20px;
+}
+
+.library-item {
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 15px 0;
+    flex-wrap: wrap;
+}
+
+.library-detail {
+    display: inline-block;
+    width: 250px;
+    height: 400px;
+    margin: 10px;
+    box-shadow: 0 2px 5px black;
+}
+
+.library-detail img {
+    width: 200px;
+    text-align: center;
+}
+
+.library-detail:hover {
+    background-color: gainsboro;
+}
+
+.form1 {
+    background-color: gainsboro;
+    box-shadow: 0 2px 5px black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.form1 p {
+    display: inline;
+    padding: 5px;
+}
+
+.form1 a {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form1 a:hover {
+    background-color: gray;
+}
+
+/*Dành cho mobile*/
+@media (max-width: 786px) {
+    body {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .page img {
+        width: 100px;
+    }
+
+    .page-content {
+        padding: 2px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .header-top,
+    .header-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .header-logo img.i1 {
+        width: 300px;
+        height: 70px;
+    }
+
+    .header-icon {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .search-box {
+        display: none;
+        margin-top: 10px;
+        position: relative;
+        border: none;
+        left: 10px;
+        bottom: 10px;
+    }
+
+    #userInfo {
+        width: 300px;
+        text-align: center;
+    }
+
+    .username, .pass {
+        width: 310px;
+        margin: 5px;
+    }
+
+    button.a1 {
+        width: 320px;
+        margin: 5px;
+    }
+
+    button.a2 {
+        width: 333px;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid white;
+        padding: 10px 0;
+    }
+
+    .profile {
+        background-color: whitesmoke;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px black;
+    }
+
+    .profile img {
+        display: inline-block;
+        width: 320px;
+        position: static;
+        margin: 10px;
+    }
+
+    .library-item {
+        justify-content: center;
+    }
+
+    .library-detail {
+        width: 70%;
+    }
+
+    .library-detail img {
+        width: 90%;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .form1 {
+        padding: 10px;
+    }
+
+    iframe.if {
+        height: 500px;
+    }
+
+    input.b1 {
+        border: none;
+        font-size: medium;
+        box-shadow: 0 2px 5px black;
+        padding: 10px;
+    }
+}
